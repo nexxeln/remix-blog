@@ -876,6 +876,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -1098,5 +1102,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:prose-xl > :where(:last-child):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0;
+  }
+
+  .lg\:m-0 {
+    margin: 0px;
   }
 }

@@ -13,9 +13,9 @@ function postFromModule(module: any) {
 
 export const loader: LoaderFunction = () => {
   return [
-    postFromModule(goGol),
-    postFromModule(nexdle),
     postFromModule(genLicense),
+    postFromModule(nexdle),
+    postFromModule(goGol),
   ];
 };
 

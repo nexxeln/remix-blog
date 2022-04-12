@@ -1,4 +1,12 @@
+import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return {
+    title: "nexxel's blog",
+    description: "here nexxel writes about stuff",
+  };
+};
 
 export default function Index() {
   return (

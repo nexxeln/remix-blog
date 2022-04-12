@@ -22,7 +22,7 @@ export const loader: LoaderFunction = () => {
 export default function BlogIndex() {
   const posts = useLoaderData();
   return (
-    <div>
+    <div className="px-6">
       <h2>Posts</h2>
 
       <ul>

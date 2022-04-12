@@ -14,7 +14,7 @@ export const links: LinksFunction = () => {
 export default function Blog() {
   return (
     <div className="flex justify-center">
-      <div className="prose lg:prose-xl py-10">
+      <div className="prose lg:prose-xl py-10 px-6">
         <Outlet />
       </div>
     </div>

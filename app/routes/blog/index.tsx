@@ -1,8 +1,9 @@
+import { Link, useLoaderData } from "@remix-run/react";
 import type { LoaderFunction } from "@remix-run/node";
 import * as goGol from "go-gol.mdx";
 import * as nexdle from "nexdle.mdx";
 import * as genLicense from "gen-license.mdx";
-import { Link, useLoaderData } from "@remix-run/react";
+import * as remixBlog from "remix-blog.mdx";
 
 function postFromModule(module: any) {
   return {
@@ -13,6 +14,7 @@ function postFromModule(module: any) {
 
 export const loader: LoaderFunction = () => {
   return [
+    postFromModule(remixBlog),
     postFromModule(genLicense),
     postFromModule(nexdle),
     postFromModule(goGol),
